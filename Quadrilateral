@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  int t;
+  cin>>t;
+  while(t--)
+  {
+    int x1,x2,x3,x4,y1,y2,y3,y4;
+    cin>>x1>>y1>>x2>>y2>>x3>>y3>>x4>>y4;
+    int a,b,c,d;
+    if(x1==x2)
+    {
+      a=abs(x1-x3);
+      b=abs(x2-x4);
+    }
+    else{
+      a=abs(x1-x2);
+      b=abs(x3-x4);
+    }
+    if(y1==y2)
+    {
+      c=abs(y1-y3);
+      d=abs(y2-y4);
+    }
+    else
+    {
+      c=abs(y1-y2);
+      d=abs(y3-y4);
+    }
+    if(a==b && b==c && c==d && d==a)
+    {
+      cout<<"Yes"<<endl;
+    }
+    else{
+    cout<<"No"<<endl;}
+  }//write your code here
+  
+  return 0;
+}
